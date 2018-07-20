@@ -1558,6 +1558,8 @@ type props = {
   [@bs.optional] onPointerLeave: ReactEventRe.Pointer.t => unit,
   [@bs.optional] onPointerOver: ReactEventRe.Pointer.t => unit,
   [@bs.optional] onPointerOut: ReactEventRe.Pointer.t => unit,
+  /* Pointer Events Polyfill */
+  [@bs.optional] [@bs.as "touch-action"] touchAction: string,
   /* UI events */
   [@bs.optional]
   onScroll: ReactEvent.UI.t => unit,
